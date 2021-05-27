@@ -14,4 +14,8 @@
 
 
 
-
+if (true) {
+    var test = true; // use "var" instead of "let"
+  }
+  
+  console.log(test); 
