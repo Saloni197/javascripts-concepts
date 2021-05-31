@@ -1,0 +1,15 @@
+<html>
+<body>
+  <a href="https://javascript.info/searching-elements-dom">...</a>
+  <a href="http://ya.ru">...</a>
+  
+
+<script>
+  for (let elem of document.body.children) {
+    if (elem.matches('a[href$="dom"]')) {
+      alert("The archive reference: " + elem.href );
+    }
+  }
+</script>
+</body>
+</html>

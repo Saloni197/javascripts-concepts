@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .example {
+        padding: 30px;
+        border: 1px solid black;
+        border-radius: 10px;
+        color: red;
+        background-color: greenyellow;
+        font-size: large;
+      }
+      </style>
+      
+      <body>
+        <ol id="ol">
+          <li>one</li>
+          <li>two</li>
+          <li>three</li>
+        </ol>
+      <script>
+        let div = document.createElement('div');
+        div.className = "example";
+        div.innerHTML = "This is about javascript.";
+      
+        document.body.append(div);
+        ol.before('begning');
+        ol.after('last'); 
+
+        let liFirst = document.createElement('li');
+        liFirst.innerHTML = '1';
+        ol.prepend(liFirst); 
+
+        let liLast = document.createElement('li');
+        liLast.innerHTML = '4';
+        ol.append(liLast); 
+        setTimeout(() => div.remove(), 1000);///node remove
+      </script>
+      </body>
+</html>
