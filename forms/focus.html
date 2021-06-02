@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <form id = "form">
+        <input type="text" name="name" value="Name">
+        <input type="text" name="surname" value="Surname">
+      </form>
+      
+      <style> .exFocus { outline: 1px solid red; } </style>
+      
+      <script>
+        form.addEventListener("focus", () => form.classList.add('exFocus'), true);
+        form.addEventListener("blur", () => form.classList.remove('exfocus'), true);
+      </script>
+      
+
+</html>

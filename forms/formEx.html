@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+  <form name="student">
+  <input name="stu" value="Kavita">
+  <input name="dent" value="Goyal"><br><br>
+  <p>
+      form for same name 
+  </p>
+  <input type="checkbox" name="sport" value="cricket">cricket
+  <input type="checkbox" name="sport" value="hockey">hockey
+</form>
+
+<script>
+  let form = document.forms.student; 
+  let elem = form.elements.dent;
+  let ageElems = form.elements.sport;
+
+alert(ageElems[0]);
+
+  alert(elem.value); 
+</script>
+    </body>
+</html>
