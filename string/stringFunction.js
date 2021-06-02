@@ -12,7 +12,7 @@ console.log(str.toLowerCase());
 console.log(str.toUpperCase());
 
 //print index of any element in string
-console.log(str.indexOf('string',8));
+console.log(str.indexOf('string'));
 
 //print true if element present on string
 console.log(str.includes("is"));
