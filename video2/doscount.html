@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var costPrice = prompt("enter Cost price",0);
+        var sellingPrice = prompt("enter selling Price", 0);
+
+        var discount = sellingPrice < costPrice;
+        var disRupee = costPrice - sellingPrice;
+        document.write('Discount rupees is rs: ', disRupee)
+        if (discount){
+            var discountPercent = Math.round((costPrice - sellingPrice)/costPrice * 100);
+
+            document.write(`<br> Discount Percent is:`,discountPercent +" OFF");
+
+        }
+        else{
+            alert("Selling price is more than costprice i.e no discont ")
+        }
+    </script>
+</body>
+</html>
