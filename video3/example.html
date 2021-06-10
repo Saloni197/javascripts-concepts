@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: gray;">
+    <h1 style="text-align: center; color:mediumblue; font-size: 50px;">
+         Counting goes upto 1000 
+    </h1>
+    <h1 class="heading" style="text-align: center;
+                               background-color:paleturquoise;">1000</h1>
+    <h2 class="paragraph" style="text-align: center;
+                                background-color:honeydew;">starting from 1</h2>
+    <script>
+        var count = document.querySelector(".heading");
+        var follow = document.querySelector(".paragraph");
+        let counter = 1;
+        setInterval(() => {
+            if (counter < 1000){
+                counter++;
+                count.innerHTML = counter;
+            }
+        },5);
+        setTimeout(() => {
+            follow.innerHTML = "End at 1000";
+        },5000)
+    </script>
+    
+</body>
+</html>
