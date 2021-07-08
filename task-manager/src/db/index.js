@@ -1,3 +1,4 @@
+//const app = require('../app.js')
 const express = require('express')
 require('./mongoose.js') 
 // const User = require('../models/user.js')
@@ -49,7 +50,7 @@ app.listen(port, ()=>{
 })
 
 // const bcrypt = require('bcryptjs')
-// //const jwt = require('jsonwebtoken')
+//const jwt = require('jsonwebtoken')
 
 // const myFunction = async()=>{
 //   const password = '23@kavita'
